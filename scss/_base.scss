@@ -36,3 +36,48 @@ body {
     height: 100vh; 
     font-family: 'Roboto', sans-serif;
 }
+
+
+// BASE TYPOGRAPHY SETUP
+p {
+    font-size: 1.5rem;
+    color: var(--color-neutral-gray-blue);
+    text-align: center;
+
+    @media only screen and (min-width: 530px){
+        font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: 1200px){
+        text-align: left;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+
+    @media only screen and (min-width: 530px){
+        font-size: 4rem;
+    }
+
+    @media only screen and (min-width: 1200px){
+        text-align: left;
+    }
+}
+
+h3 {
+
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    @media only screen and (min-width: 530px){
+        font-size: 3em;
+    }
+
+    @media only screen and (min-width: 1200px){
+        text-align: left;
+    }
+}

@@ -1,61 +1,4 @@
-
-p {
-    font-size: 1.5rem;
-    color: var(--color-neutral-gray-blue);
-    text-align: center;
-
-    @media only screen and (min-width: 530px){
-        font-size: 2.5rem;
-    }
-
-    @media only screen and (min-width: 800px){
-        font-size: 3.5rem;
-    }
-
-    @media only screen and (min-width: 1200px){
-        text-align: left;
-    }
-}
-
-h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: center;
-    padding: 0rem 1rem 0rem 1rem;
-
-    @media only screen and (min-width: 530px){
-        font-size: 4rem;
-    }
-
-    @media only screen and (min-width: 800px){
-        font-size: 5rem;
-    }
-
-    @media only screen and (min-width: 1200px){
-        text-align: left;
-    }
-}
-
-h3 {
-
-    font-size: 1.6rem;
-    font-weight: 300;
-
-    @media only screen and (min-width: 530px){
-        font-size: 3em;
-    }
-
-    @media only screen and (min-width: 800px){
-        font-size: 4rem;
-    }
-
-    @media only screen and (min-width: 1200px){
-        text-align: left;
-    }
-
-    
-}
-
+// ---NAVIGATION SECTION--- 
 nav {
     display: flex;
     justify-content: space-between;
@@ -68,59 +11,76 @@ nav {
     }
 }
 
-hero {
-    display: block;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+// ---HERO SECTION--- 
+.hero-header-container {
 
-    img {
+    hero {
+        display: block;
+        position: relative;
         width: 100%;
-        height: 100%;
-    }
-
-    #hero-mobile {
-        position: absolute;
-        top: -14rem;
-        left: 0;
-        height: 120%;
-
-        @media only screen and (min-width: 530px){
-            top: -20rem;
-        }
-
-        @media only screen and (min-width: 800px){
-            top: -30rem;
-        }
-
-        @media only screen and (min-width: 1200px){
-            top: -10rem;
-            overflow: visible;
-        }
-        
-    }
-}
-
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
-    margin-top: -5rem;
-    padding-bottom: 10rem;
+        overflow: hidden;
     
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        #hero-mobile {
+            position: absolute;
+            top: -14rem;
+            left: 0;
+            height: 120%;
+    
+            @media only screen and (min-width: 530px){
+                top: -20rem;
+            }
+    
+            @media only screen and (min-width: 800px){
+                top: -30rem;
+            }
+    
+            @media only screen and (min-width: 1200px){
+                top: -10rem;
+                overflow: visible;
+            }
+            
+        }
+    }
 
-    h1 {
-        text-align: center;
-        font-size: 3.5rem;
-        font-weight: 300;   
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        gap: 2rem;
+        margin-top: -5rem;
+        padding-bottom: 10rem;
+        
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 300;   
+        }
+    }
+
+    @media only screen and (min-width: 1200px){
+        display: flex;
+        flex-flow: row-reverse;
+        padding: 0 0 0 10rem;
+        background-color: var(--color-neutral-light-gray-blue);
+
+        header {
+            flex: 1 1 50%; 
+        }
+
+        hero {
+            flex: 1 1 50%;
+        }
     }
 }
 
-
+// ---MAIN CONTENT SECTION--- 
 main {
     display: flex;
     flex-direction: column;
@@ -153,6 +113,8 @@ main {
      }
 }
 
+
+// ---ARTICLE SECTION--- 
 article {
     display: flex;
     flex-direction: column;
@@ -203,6 +165,8 @@ article {
     }
 }
 
+
+// ---FOOTER SECTION--- 
 footer {
     display: flex;
     flex-direction: column;
@@ -247,50 +211,9 @@ footer {
 }
 
 
-.icons {
-    @media only screen and (min-width: 530px){
-        width: 6rem;
-        height: 6rem;
-        padding: 1.5rem;
-    }
-
-    @media only screen and (min-width: 800px){
-        width: 8rem;
-        height: 8rem;
-        padding: 2rem;
-    }
-}
-
-.logo {
-    @media only screen and (min-width: 530px){
-        width: 20rem;
-        height: 6rem;
-        padding: 1rem;
-    }
-
-    @media only screen and (min-width: 800px){
-        width: 30rem;
-        height: 8rem;
-        padding: 1.5rem;
-    }
-}
 
 
-.hero-header-container {
-    @media only screen and (min-width: 1200px){
-        display: flex;
-        flex-flow: row-reverse;
-        padding: 0 0 0 10rem;
-        background-color: var(--color-neutral-light-gray-blue);
 
-        header {
-            flex: 1 1 50%; 
-        }
 
-        hero {
-            flex: 1 1 50%;
-        }
-    }
-}
 
 
