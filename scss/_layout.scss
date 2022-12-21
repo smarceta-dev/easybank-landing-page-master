@@ -3,6 +3,18 @@ p {
     font-size: 1.5rem;
     color: var(--color-neutral-gray-blue);
     text-align: center;
+
+    @media only screen and (min-width: 530px){
+        font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: 800px){
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 1200px){
+        text-align: left;
+    }
 }
 
 h2 {
@@ -10,6 +22,38 @@ h2 {
     font-weight: 300;
     text-align: center;
     padding: 0rem 1rem 0rem 1rem;
+
+    @media only screen and (min-width: 530px){
+        font-size: 4rem;
+    }
+
+    @media only screen and (min-width: 800px){
+        font-size: 5rem;
+    }
+
+    @media only screen and (min-width: 1200px){
+        text-align: left;
+    }
+}
+
+h3 {
+
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    @media only screen and (min-width: 530px){
+        font-size: 3em;
+    }
+
+    @media only screen and (min-width: 800px){
+        font-size: 4rem;
+    }
+
+    @media only screen and (min-width: 1200px){
+        text-align: left;
+    }
+
+    
 }
 
 nav {
@@ -40,6 +84,19 @@ hero {
         top: -14rem;
         left: 0;
         height: 120%;
+
+        @media only screen and (min-width: 530px){
+            top: -20rem;
+        }
+
+        @media only screen and (min-width: 800px){
+            top: -30rem;
+        }
+
+        @media only screen and (min-width: 1200px){
+            top: -10rem;
+            overflow: visible;
+        }
         
     }
 }
@@ -59,9 +116,8 @@ header {
     h1 {
         text-align: center;
         font-size: 3.5rem;
-        font-weight: 300;
+        font-weight: 300;   
     }
-    
 }
 
 
@@ -70,14 +126,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem 2rem 10rem 2rem;
+    padding: 8rem 2rem 8rem 2rem;
     gap: 4rem;
     background-color: var(--color-neutral-light-gray-blue);
-    padding-top: 10rem;
-    padding-bottom: 10rem;
 
-
-
+    .main-section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        
+        @media only screen and (min-width: 1200px){
+            flex-direction: row;
+        }
+    }
     section {
         display: flex;
         flex-direction: column;
@@ -85,14 +146,10 @@ main {
         align-items: center;
         gap: 2rem;
 
-        h3 {
-            font-size: 2rem;
-            font-weight: 300;
+        @media only screen and (min-width: 1200px){
+           align-items: flex-start;
+           justify-content: flex-start;
         }
-     }
-
-     section:first-child {
-        margin-bottom: 1rem;
      }
 }
 
@@ -101,12 +158,24 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem 2rem 10rem 2rem;
+    padding: 8rem 2rem 8rem 2rem;
     gap: 6rem;
     background-color: var(--color-neutral-very-light-gray);
+
+    .article-selection {
+        @media only screen and (min-width: 1200px){
+            display: flex;
+            gap: 1rem;
+        }
+
+        section {
+            @media only screen and (min-width: 1200px){
+                flex: 1 1 25%;
+            }
+        }
+        
+    }
     
-
-
     img {
         width: 100%;
         height: 100%;
@@ -121,13 +190,8 @@ article {
         background-color: var(--color-neutral-white);
         border-radius: 1rem;
 
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 300;
-        }
-
         p {
-            text-align: start;
+            text-align: left;
         }
 
         p, h3 {
@@ -151,14 +215,12 @@ footer {
     section {
         img {
             padding: 0.5rem;
-        }
-        
+        }        
     }
 
     a {
         color: white;
         text-decoration: none;
-        
     }
 
     li {
@@ -167,6 +229,14 @@ footer {
         font-size: 1.5rem;
         font-weight: 300;
         color: var(--color-neutral-gray-blue);
+
+        @media only screen and (min-width: 530px){
+            font-size: 2rem;
+        }
+    
+        @media only screen and (min-width: 800px){
+            font-size: 3rem;
+        }
     }
 
     .footer-nav {
@@ -175,3 +245,52 @@ footer {
         padding: 0px;
     }
 }
+
+
+.icons {
+    @media only screen and (min-width: 530px){
+        width: 6rem;
+        height: 6rem;
+        padding: 1.5rem;
+    }
+
+    @media only screen and (min-width: 800px){
+        width: 8rem;
+        height: 8rem;
+        padding: 2rem;
+    }
+}
+
+.logo {
+    @media only screen and (min-width: 530px){
+        width: 20rem;
+        height: 6rem;
+        padding: 1rem;
+    }
+
+    @media only screen and (min-width: 800px){
+        width: 30rem;
+        height: 8rem;
+        padding: 1.5rem;
+    }
+}
+
+
+.hero-header-container {
+    @media only screen and (min-width: 1200px){
+        display: flex;
+        flex-flow: row-reverse;
+        padding: 0 0 0 10rem;
+        background-color: var(--color-neutral-light-gray-blue);
+
+        header {
+            flex: 1 1 50%; 
+        }
+
+        hero {
+            flex: 1 1 50%;
+        }
+    }
+}
+
+
